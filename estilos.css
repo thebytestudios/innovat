@@ -1207,39 +1207,3 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     color: var(--primary-color);
 }
 
-/* --- MEJORA DEL LOGO EN EL FOOTER --- */
-.footer-logo {
-    height: 80px; /* Lo hacemos más grande */
-    width: auto;
-    margin-bottom: 15px;
-    display: block;
-    
-    /* TRUCO MAESTRO: Convierte el logo oscuro en blanco brillante */
-    filter: brightness(0) invert(1); 
-    
-    /* EFECTO NEÓN: Le da un brillo suave color cyan */
-    filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(0, 242, 254, 0.6));
-    
-    transition: transform 0.3s ease;
-}
-
-.footer-logo:hover {
-    transform: scale(1.1); /* Efecto al pasar el mouse */
-    filter: brightness(0) invert(1) drop-shadow(0 0 12px rgba(0, 242, 254, 0.9));
-}
-
-/* Ajuste adicional para la columna del footer */
-.footer-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinea todo a la izquierda */
-}
-
-/* Si quieres que el eslogan también se lea mejor */
-.footer-column p {
-    color: #cbd5e1;
-    font-size: 0.95rem;
-    max-width: 250px;
-    line-height: 1.4;
-}
-
