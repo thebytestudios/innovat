@@ -1243,6 +1243,34 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     color: #94a3b8;
 }
 
+/* Contenedor que mantiene la proporción del video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 12px; /* Bordes redondeados para que se vea moderno */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* El iframe se estira para llenar el contenedor */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Ajuste del bloque padre */
+.video-box {
+    width: 100%;
+    max-width: 900px; /* Ancho máximo en computadora */
+    margin: 20px auto;
+    padding: 0 15px; /* Margen para que no toque los bordes en celular */
+}
 
 
 
