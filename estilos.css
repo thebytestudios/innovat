@@ -1206,4 +1206,34 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 .footer-column a:hover {
     color: var(--primary-color);
 }
+/* --- LOGO DEL FOOTER ULTRA VISIBLE --- */
+.footer-logo {
+    height: 80px; /* Lo hacemos más grande para que destaque */
+    width: auto;
+    margin-bottom: 20px;
+    display: block;
+    
+    /* 1. Lo volvemos blanco puro (Ignora los colores originales) */
+    filter: brightness(0) invert(1) !important;
+    
+    /* 2. Le damos un brillo 'Glow' color cyan para que se vea tecnológico */
+    filter: brightness(0) invert(1) drop-shadow(0 0 12px rgba(0, 242, 254, 0.7)) !important;
+    
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 1;
+    transform: scale(1.08);
+    /* Brillo más intenso al pasar el mouse */
+    filter: brightness(0) invert(1) drop-shadow(0 0 18px rgba(0, 242, 254, 1)) !important;
+}
+
+/* Alineación para que no se vea desordenado */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
