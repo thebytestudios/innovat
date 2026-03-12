@@ -1206,9 +1206,16 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     color: var(--primary-color);
 }
 
-.footer-logo {
-    height: 50px;
-    margin-bottom: 20px;
+.footer-text-logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-color); /* Usa el color cyan de tu marca */
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    display: block;
+    /* Un pequeño brillo para que resalte en el fondo oscuro */
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
 }
 
 .social-links {
@@ -1235,6 +1242,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     font-size: 0.9rem;
     color: #94a3b8;
 }
+
 
 
 
