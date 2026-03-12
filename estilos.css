@@ -1235,4 +1235,33 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
     color: #94a3b8;
+
+}
+
+.footer-logo {
+    height: 70px; 
+    margin-bottom: 20px;
+   
+    filter: brightness(0) invert(1); 
+   
+    filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
+}
+
+.social-links a img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1); /* Los hace blancos */
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.social-links a img:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px var(--primary-color)) brightness(0) invert(1);
+    transform: translateY(-3px);
 }
