@@ -1206,24 +1206,33 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 .footer-column a:hover {
     color: var(--primary-color);
 }
-/* --- LOGO DEL FOOTER (COLORES ORIGINALES) --- */
+
 .footer-logo {
-    height: 75px; /* Tamaño intermedio */
-    width: auto;
+    height: 50px;
     margin-bottom: 20px;
-    display: block;
-    
-    /* Quitamos el invert para que vuelvan los colores originales */
-    filter: none !important; 
-    
-    /* Añadimos un resplandor blanco muy suave para que el negro del logo se separe del fondo */
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
-    
-    transition: transform 0.3s ease;
 }
 
-.footer-logo:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+.social-links {
+    display: flex;
+    gap: 15px;
 }
 
+.social-links img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1); /* Hace que los íconos negros se vean blancos */
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
