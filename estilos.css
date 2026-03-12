@@ -1207,61 +1207,39 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     color: var(--primary-color);
 }
 
+/* --- MEJORA DEL LOGO EN EL FOOTER --- */
 .footer-logo {
-    height: 50px;
-    margin-bottom: 20px;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.social-links img {
-    width: 30px;
-    height: 30px;
-    filter: invert(1); /* Hace que los íconos negros se vean blancos */
-    transition: transform 0.3s;
-}
-
-.social-links img:hover {
-    transform: scale(1.2);
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 0.9rem;
-    color: #94a3b8;
-
-}
-
-.footer-logo {
-    height: 70px; 
-    margin-bottom: 20px;
-   
+    height: 80px; /* Lo hacemos más grande */
+    width: auto;
+    margin-bottom: 15px;
+    display: block;
+    
+    /* TRUCO MAESTRO: Convierte el logo oscuro en blanco brillante */
     filter: brightness(0) invert(1); 
-   
-    filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.5));
+    
+    /* EFECTO NEÓN: Le da un brillo suave color cyan */
+    filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(0, 242, 254, 0.6));
+    
     transition: transform 0.3s ease;
 }
 
 .footer-logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+    filter: brightness(0) invert(1) drop-shadow(0 0 12px rgba(0, 242, 254, 0.9));
 }
 
-.social-links a img {
-    width: 32px;
-    height: 32px;
-    filter: brightness(0) invert(1); /* Los hace blancos */
-    opacity: 0.8;
-    transition: 0.3s;
+/* Ajuste adicional para la columna del footer */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea todo a la izquierda */
 }
 
-.social-links a img:hover {
-    opacity: 1;
-    filter: drop-shadow(0 0 5px var(--primary-color)) brightness(0) invert(1);
-    transform: translateY(-3px);
+/* Si quieres que el eslogan también se lea mejor */
+.footer-column p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    max-width: 250px;
+    line-height: 1.4;
 }
+
